@@ -1,4 +1,4 @@
-# Welcome!
+# 👽 Welcome!
 
 Why is this boilerplate the best? Because all the top eth boilerplates on github right now are created by companies who integrate every aspect of their product/service into the boilerplate, making it all but unusable unless you sign up for their service!
 
@@ -10,12 +10,13 @@ Not this one.
 If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes us very happy!
 
 ## 🤝 Need help?
-If you need help with setting up the boilerplate or have other questions - 
+If you need help with setting up the boilerplate or have other questions - reach out on [twitter](https://twitter.com/ilyxium)
 
 ## 🚀 Quick Start
 
 ```bash
 git clone 
+
 npm install
 # then
 npm run dev
