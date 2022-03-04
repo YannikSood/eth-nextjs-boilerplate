@@ -30,6 +30,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Examples of buttons and links 👽
 
 ## Connect with me
-Feel free to reach out on twitter @ilyxium and drop your questions, comments or suggestions on how I can improve this!
+Feel free to reach out on twitter [@ilyxium](https://twitter.com/ilyxium) and drop your questions, comments or suggestions on how I can improve this!
 
 # Enjoy :)
