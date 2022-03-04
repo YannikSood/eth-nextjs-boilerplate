@@ -6,7 +6,7 @@ Not this one.
 
 <img width="1437" alt="Screen Shot 2022-03-04 at 12 02 01 AM" src="https://user-images.githubusercontent.com/100057052/156702502-2882bdb6-4860-44ac-99fe-34056e8f356d.png">
 
-## ⭐️ Star us
+## ⭐️ Star this repo!
 If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes me very happy!
 
 ## 🤝 Need help?
