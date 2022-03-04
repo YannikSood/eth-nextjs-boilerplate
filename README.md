@@ -4,18 +4,18 @@ Why is this boilerplate the best? Because all the top eth boilerplates on github
 
 Not this one.
 
-This boilerplate uses the following open source libraries to bring you a fully functional, mobile optimized dApp:
-
-- [next.js](https://nextjs.org/docs)
-- [react.js](https://reactjs.org/)
-- [wagmi](https://wagmi-xyz.vercel.app/)
-- [ethers.js](https://docs.ethers.io/v5/)
-- [chakra](https://chakra-ui.com/)
-
 <img width="1437" alt="Screen Shot 2022-03-04 at 12 02 01 AM" src="https://user-images.githubusercontent.com/100057052/156702502-2882bdb6-4860-44ac-99fe-34056e8f356d.png">
 
-## Get Started:
+## ⭐️ Star us
+If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes us very happy!
+
+## 🤝 Need help?
+If you need help with setting up the boilerplate or have other questions - 
+
+## 🚀 Quick Start
+
 ```bash
+git clone 
 npm install
 # then
 npm run dev
@@ -25,7 +25,17 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## What you get
+## What's under the hood
+
+This boilerplate uses the following open source libraries to bring you a fully functional, mobile optimized dApp:
+
+- [next.js](https://nextjs.org/docs)
+- [react.js](https://reactjs.org/)
+- [wagmi](https://wagmi-xyz.vercel.app/)
+- [ethers.js](https://docs.ethers.io/v5/)
+- [chakra](https://chakra-ui.com/)
+
+
 - Connect Wallet + One example transaction 💲
 - Scalable header + mobile menu ↔️
 - Mobile friendly 📱
