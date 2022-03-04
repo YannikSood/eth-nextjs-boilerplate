@@ -15,8 +15,8 @@ If you need help with setting up the boilerplate or have other questions - reach
 ## 🚀 Quick Start
 
 ```bash
-git clone 
-
+git clone https://github.com/ilyxium/eth-nextjs-boilerplate.git
+# then
 npm install
 # then
 npm run dev
@@ -26,7 +26,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## What's under the hood
+## 🛠 What's under the hood
 
 This boilerplate uses the following open source libraries to bring you a fully functional, mobile optimized dApp:
 
@@ -36,6 +36,7 @@ This boilerplate uses the following open source libraries to bring you a fully f
 - [ethers.js](https://docs.ethers.io/v5/)
 - [chakra](https://chakra-ui.com/)
 
+## 💎 What you get
 
 - Connect Wallet + One example transaction 💲
 - Scalable header + mobile menu ↔️
@@ -46,7 +47,7 @@ This boilerplate uses the following open source libraries to bring you a fully f
 - 3 pages, including a 404 page, and routing done ✅
 - Examples of buttons and links 👽
 
-## Connect with me
+## 😃 Connect with me
 Feel free to reach out on twitter [@ilyxium](https://twitter.com/ilyxium) and drop your questions, comments or suggestions on how I can improve this!
 
-# Enjoy :)
+# ❤️ Enjoy :)
