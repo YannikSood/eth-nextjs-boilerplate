@@ -1,5 +1,6 @@
 # Welcome!
 
+Why is this boilerplate the best? because it uses only open source libraries, that do not require any services to sign up for. All the top eth boilerplates on github right now are created by companies who integrate every aspect of their product/service into the boilerplate, making it all but unusable without signing up!
 
 This boilerplate uses the following open source libraries to bring you a fully functional, mobile optimized dApp:
 
