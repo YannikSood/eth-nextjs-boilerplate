@@ -23,13 +23,14 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## What you get
-- Connect Wallet + One example transaction
-- Scalable header + mobile menu
-- Mobile friendly
-- 3 pages, including a 404 page, and routing done
-- Examples of buttons and links
+- Connect Wallet + One example transaction 💲
+- Scalable header + mobile menu ↔️
+- Mobile friendly 📱
+- 3 pages, including a 404 page, and routing done ✅
+- Examples of buttons and links 👽
 
 ## Connect with me
 Feel free to reach out on twitter @ilyxium and drop your questions, comments or suggestions on how I can improve this!
 
 # Enjoy :)
+Please star this repo! It would really help me out
