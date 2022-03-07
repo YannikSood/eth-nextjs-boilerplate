@@ -82,11 +82,11 @@ const walletConnector = new WalletConnectConnector({
   })
 ```
 
-You just need to change the connector here to your desired connector:
+You just need to pass your desired connector to ``connect`` here:
 
-```
+``
    <NavButton ml="30px" onClick={() => connect(connector)}>
-```
+``
 
 If you want to offer multiple connectors, you can do something like this:
 
