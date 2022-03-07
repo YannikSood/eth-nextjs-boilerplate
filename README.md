@@ -51,7 +51,7 @@ This boilerplate uses the following open source libraries to bring you a fully f
 
 The boilerplate already has an injected wallet [metamask] integrated. The code for this can be found in ```src/components/Header/index.js```:
 
-```bash
+``
   const [{ data: connectData, error: connectError, loading: connectLoading }, connect] = useConnect()
   
   ...
@@ -63,11 +63,11 @@ The boilerplate already has an injected wallet [metamask] integrated. The code f
   ...
   
    <NavButton ml="30px" onClick={() => connect(connector)}>
-```
+``
 
 However, you may want to use a different wallet connector, such as WalletConnect or WalletLink. For that, I have already included the code for the connectors:
 
-```
+``
 const walletConnector = new WalletConnectConnector({
     options: {
       qrcode: true,
@@ -80,7 +80,7 @@ const walletConnector = new WalletConnectConnector({
       jsonRpcUrl: 'https://mainnet.infura.io/v3',
     },
   })
-```
+``
 
 You just need to pass your desired connector to ``connect`` here:
 
@@ -90,13 +90,13 @@ You just need to pass your desired connector to ``connect`` here:
 
 If you want to offer multiple connectors, you can do something like this:
 
-```
+``
   {data.connectors.map((x) => (
     <button key={x.name} onClick={() => connect(x)}>
       {x.name}
     </button>
   ))}
-```
+``
 
 More information on connectors can be found [here](https://wagmi-xyz.vercel.app/docs/hooks/useConnect).
 
