@@ -51,36 +51,38 @@ This boilerplate uses the following open source libraries to bring you a fully f
 
 The boilerplate already has an injected wallet [metamask] integrated. The code for this can be found in ```src/components/Header/index.js```:
 
-``
-  const [{ data: connectData, error: connectError, loading: connectLoading }, connect] = useConnect()
-  
-  ...
-  
-  const connector = new InjectedConnector({
-    chains: [...defaultChains, ...defaultL2Chains],
-  })
-  
-  ...
-  
-   <NavButton ml="30px" onClick={() => connect(connector)}>
-``
+```
+const [{ data: connectData, error: connectError, loading: connectLoading }, connect] = useConnect()
+
+...
+
+const connector = new InjectedConnector({
+  chains: [...defaultChains, ...defaultL2Chains],
+})
+
+...
+
+ <NavButton ml="30px" onClick={() => connect(connector)}>
+
+...
+```
 
 However, you may want to use a different wallet connector, such as WalletConnect or WalletLink. For that, I have already included the code for the connectors:
 
-``
+```
 const walletConnector = new WalletConnectConnector({
-    options: {
-      qrcode: true,
-    },
-  })
+  options: {
+    qrcode: true,
+  },
+})
 
-  const linkConnector = new WalletLinkConnector({
-    options: {
-      appName: 'Mirror.xyz',
-      jsonRpcUrl: 'https://mainnet.infura.io/v3',
-    },
-  })
-``
+const linkConnector = new WalletLinkConnector({
+  options: {
+    appName: 'Mirror.xyz',
+    jsonRpcUrl: 'https://mainnet.infura.io/v3',
+  },
+})
+```
 
 You just need to pass your desired connector to ``connect`` here:
 
@@ -90,17 +92,17 @@ You just need to pass your desired connector to ``connect`` here:
 
 If you want to offer multiple connectors, you can do something like this:
 
-``
-  {data.connectors.map((x) => (
-    <button key={x.name} onClick={() => connect(x)}>
-      {x.name}
-    </button>
-  ))}
-``
+```
+{data.connectors.map((x) => (
+  <button key={x.name} onClick={() => connect(x)}>
+    {x.name}
+  </button>
+))}
+```
 
 More information on connectors can be found [here](https://wagmi-xyz.vercel.app/docs/hooks/useConnect).
 
 ## 😃 Connect with me
 Feel free to reach out on twitter [@ilyxium](https://twitter.com/ilyxium) and drop your questions, comments or suggestions on how I can improve this!
 
-# ❤️ Enjoy :)
+# ❤️ Enjoy 
