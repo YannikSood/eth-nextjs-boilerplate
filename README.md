@@ -84,7 +84,7 @@ const linkConnector = new WalletLinkConnector({
 })
 ```
 
-You just need to pass your desired connector to ``connect`` here:
+You just need to pass your desired connector to ``connect()`` here:
 
 ``
    <NavButton ml="30px" onClick={() => connect(connector)}>
