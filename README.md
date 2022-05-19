@@ -15,7 +15,6 @@ If you need help with setting up the boilerplate or have other questions - reach
 ```bash
 git clone https://github.com/ilyxium/eth-nextjs-boilerplate.git
 # then
->>>>>>> 3336b59cc7dcb20cab945f027355a1b8f5f72ebc
 npm install
 # then
 npm run dev
