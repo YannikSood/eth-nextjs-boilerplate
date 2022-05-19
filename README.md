@@ -18,9 +18,9 @@ git clone https://github.com/ilyxium/eth-nextjs-boilerplate.git
 npm install
 # then
 npm run dev
-# or
-yarn dev
 ```
+
+Please note: Some users have mentioned issues with using yarn, so I recommend using NPM
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
