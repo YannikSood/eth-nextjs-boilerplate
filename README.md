@@ -1,15 +1,20 @@
 # 👽 Welcome!
 
-Why is this boilerplate the best? Because all the top eth boilerplates on github right now are created by companies who integrate every aspect of their product/service into the boilerplate, making it all but unusable unless you sign up for their service!
+Why is this boilerplate the best? 
+
+- Only open source libraries used!
+- Easy Setup [3 lines!]
+- Uses the latest stack
+- Not dependent on any paid product or service
+- It works really fucking well
+
+<img width="1435" alt="Screen Shot 2022-07-06 at 3 07 26 PM" src="https://user-images.githubusercontent.com/100057052/177624635-bf983ec8-38fb-422a-8e23-10d08c229e76.png">
 
 ## 💻 Latest Updates [July 6th, 2022]
 
 - Integrated Rainbowkit
 - Updated Wagmi
 - Cleaned up the Nav code
-
-
-<img width="1437" alt="Screen Shot 2022-03-04 at 12 02 01 AM" src="https://user-images.githubusercontent.com/100057052/156702502-2882bdb6-4860-44ac-99fe-34056e8f356d.png">
 
 ## ⭐️ Star this repo!
 If this boilerplate helps you build Ethereum dapps faster - please star this project, every star helps!
