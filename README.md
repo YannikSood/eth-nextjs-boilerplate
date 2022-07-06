@@ -1,7 +1,13 @@
 # 👽 Welcome!
 
-# 💻
 Why is this boilerplate the best? Because all the top eth boilerplates on github right now are created by companies who integrate every aspect of their product/service into the boilerplate, making it all but unusable unless you sign up for their service!
+
+## 💻 Latest Updates [July 6th, 2022]
+
+- Integrated Rainbowkit
+- Updated Wagmi
+- Cleaned up the Nav code
+
 
 <img width="1437" alt="Screen Shot 2022-03-04 at 12 02 01 AM" src="https://user-images.githubusercontent.com/100057052/156702502-2882bdb6-4860-44ac-99fe-34056e8f356d.png">
 
