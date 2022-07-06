@@ -49,11 +49,11 @@ This boilerplate uses the following open source libraries to bring you a fully f
 
 ## 💎 What you get
 
-- Connect Wallet + One example transaction 💲
+- Connect Wallet + One wagmi hook [send a transaction] done for you! 💲
 - Scalable header + mobile menu ↔️
 - Mobile friendly 📱
 
-<img width="492" alt="Screen Shot 2022-03-04 at 2 37 24 AM" src="https://user-images.githubusercontent.com/100057052/156723802-2c9763e9-9fae-4221-ab83-5506c2b78c37.png">
+<img width="489" alt="Screen Shot 2022-07-06 at 3 13 53 PM" src="https://user-images.githubusercontent.com/100057052/177625571-5ee7a1fe-bbb1-4031-b3f5-cfb535171763.png">
 
 - 3 pages, including a 404 page, and routing done ✅
 - Examples of buttons and links 👽
