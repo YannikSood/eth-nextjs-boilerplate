@@ -18,39 +18,13 @@ import {
   MenuIcon,
   XIcon
 } from '@heroicons/react/outline'
-import { useConnect, useAccount, defaultChains, defaultL2Chains } from 'wagmi'
-import { InjectedConnector } from 'wagmi/connectors/injected'
-import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
-import { WalletLinkConnector } from 'wagmi/connectors/walletLink'
-import { shorten } from '../../utils/shorten.ts'
-import { NavButton } from './NavButton'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { NavDrawerItem, NavItem } from './NavItem'
 
 // @ts-ignore
 import { SocialIcon } from 'react-social-icons'
 
 export const Header = () => {
-  const [{ data: connectData, error: connectError, loading: connectLoading }, connect] = useConnect()
-  const [{ data: accountData, error: accountError, loading: accountLoading }] = useAccount({
-    fetchEns: true,
-  })
-
-  const connector = new InjectedConnector({
-    chains: [...defaultChains, ...defaultL2Chains],
-  })
-
-  const walletConnector = new WalletConnectConnector({
-    options: {
-      qrcode: true,
-    },
-  })
-
-  const linkConnector = new WalletLinkConnector({
-    options: {
-      appName: 'Mirror.xyz',
-      jsonRpcUrl: 'https://mainnet.infura.io/v3',
-    },
-  })
 
   const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
 
@@ -105,21 +79,7 @@ export const Header = () => {
             </HStack>
 
             {/* Connect Wallet Button */}
-            <NavButton ml="30px" onClick={() => connect(connector)}>
-              {accountData && accountData.address ? (
-                <>
-                  <Box>
-                    <Davatar size={25} address={accountData.address} />
-                  </Box>
-                  <Text>{shorten(accountData.address)}</Text>
-                </>
-              ) : (
-                <>
-                  <Text className="capitalize">{'connect'}</Text>
-                  <LoginIcon className="w-5 h-5" />
-                </>
-              )}
-            </NavButton>
+            <ConnectButton />
 
             {/* Drawer Toggle Button */}
             <Button
@@ -163,7 +123,7 @@ export const Header = () => {
               marginBottom="3rem"
               fontSize={[20, 20, 20]}
             >
-              {/* Alien Logo */}
+              
               <NextLink href="/">
                 <Link className="center flex gap-2">
                   <span>👽</span>
@@ -173,22 +133,6 @@ export const Header = () => {
 
               {/* Wallet and Close Button Wrapper */}
               <Flex gap="0.5rem">
-                {/* Connect Wallet Button */}
-                <NavButton ml="30px" onClick={() => connect(connector)}>
-                  {accountData && accountData.address ? (
-                    <>
-                      <Box>
-                        <Davatar size={25} address={accountData.address} />
-                      </Box>
-                      <Text>{shorten(accountData.address)}</Text>
-                    </>
-                  ) : (
-                    <>
-                      <Text className="capitalize">{'connect'}</Text>
-                      <LoginIcon className="w-5 h-5" />
-                    </>
-                  )}
-                </NavButton>
 
                 {/* Close Icon */}
                 <Button
@@ -216,7 +160,7 @@ export const Header = () => {
                 </Flex>
               </NavDrawerItem>
             ))}
-            {/* Twitter and Language Menu Wrapper */}
+            {/* Twitter Wrapper */}
             <Flex
               width="100%"
               justify="space-between"

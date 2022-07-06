@@ -1,11 +1,12 @@
 # 👽 Welcome!
 
+# 💻
 Why is this boilerplate the best? Because all the top eth boilerplates on github right now are created by companies who integrate every aspect of their product/service into the boilerplate, making it all but unusable unless you sign up for their service!
 
 <img width="1437" alt="Screen Shot 2022-03-04 at 12 02 01 AM" src="https://user-images.githubusercontent.com/100057052/156702502-2882bdb6-4860-44ac-99fe-34056e8f356d.png">
 
 ## ⭐️ Star this repo!
-If this boilerplate helps you build Ethereum dapps faster - please star this project, every star makes me very happy!
+If this boilerplate helps you build Ethereum dapps faster - please star this project, every star helps!
 
 ## 🤝 Need help?
 If you need help with setting up the boilerplate or have other questions - reach out on [twitter](https://twitter.com/ilyxium)
@@ -33,6 +34,7 @@ This boilerplate uses the following open source libraries to bring you a fully f
 - [wagmi](https://wagmi-xyz.vercel.app/)
 - [ethers.js](https://docs.ethers.io/v5/)
 - [chakra](https://chakra-ui.com/)
+- [rainbowkit](https://www.rainbowkit.com/docs/introduction)
 
 ## 💎 What you get
 
@@ -45,60 +47,22 @@ This boilerplate uses the following open source libraries to bring you a fully f
 - 3 pages, including a 404 page, and routing done ✅
 - Examples of buttons and links 👽
 
-## 🔌 Add Wallet Connections
+## 🔌 Connectors
 
-The boilerplate already has an injected wallet [metamask] integrated. The code for this can be found in ```src/components/Header/index.js```:
+The boilerplate now uses [rainbowkit](https://www.rainbowkit.com/docs/introduction). They make it super easy to configure the connector, and allows you to choose chains, styling, and more. 
 
-```
-const [{ data: connectData, error: connectError, loading: connectLoading }, connect] = useConnect()
-
-...
-
-const connector = new InjectedConnector({
-  chains: [...defaultChains, ...defaultL2Chains],
-})
-
-...
-
- <NavButton ml="30px" onClick={() => connect(connector)}>
-
-...
-```
-
-However, you may want to use a different wallet connector, such as WalletConnect or WalletLink. For that, I have already included the code for the connectors:
+Change your chains in app.tsx:
 
 ```
-const walletConnector = new WalletConnectConnector({
-  options: {
-    qrcode: true,
-  },
-})
-
-const linkConnector = new WalletLinkConnector({
-  options: {
-    appName: 'Mirror.xyz',
-    jsonRpcUrl: 'https://mainnet.infura.io/v3',
-  },
-})
+  const { chains, provider } = configureChains(
+    [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+    [
+      alchemyProvider(),
+      publicProvider()
+    ]
+  );
 ```
 
-You just need to pass your desired connector to ``connect()`` here:
-
-``
-   <NavButton ml="30px" onClick={() => connect(connector)}>
-``
-
-If you want to offer multiple connectors, you can do something like this:
-
-```
-{data.connectors.map((x) => (
-  <button key={x.name} onClick={() => connect(x)}>
-    {x.name}
-  </button>
-))}
-```
-
-More information on connectors can be found [here](https://wagmi-xyz.vercel.app/docs/hooks/useConnect).
 
 ## 😃 Connect with me
 Feel free to reach out on twitter [@ilyxium](https://twitter.com/ilyxium) and drop your questions, comments or suggestions on how I can improve this!
