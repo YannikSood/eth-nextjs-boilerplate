@@ -6,7 +6,7 @@ Why is this boilerplate the best?
 - Easy Setup [3 lines!]
 - Uses the latest stack
 - Not dependent on any paid product or service
-- It works really fucking well
+- It works really well
 
 <img width="1435" alt="Screen Shot 2022-07-06 at 3 07 26 PM" src="https://user-images.githubusercontent.com/100057052/177624635-bf983ec8-38fb-422a-8e23-10d08c229e76.png">
 
