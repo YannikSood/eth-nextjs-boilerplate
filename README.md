@@ -76,6 +76,6 @@ Change your chains in app.tsx:
 
 
 ## 😃 Connect with me
-Feel free to reach out on twitter [@ilyxium](https://twitter.com/ilyxium) and drop your questions, comments or suggestions on how I can improve this!
+Feel free to reach out on twitter [@yanniksood](https://twitter.com/yanniksood) and drop your questions, comments or suggestions on how I can improve this!
 
 # Enjoy 
