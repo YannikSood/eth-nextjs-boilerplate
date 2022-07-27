@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         </h2>
 
         <div className={styles.grid}>
-          <Link href='https://twitter.com/ilyxium' isExternal>
+          <Link href='https://twitter.com/yanniksood' isExternal>
             <Button
               backgroundColor="#BB86FC"
               borderRadius="25px"
