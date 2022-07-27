@@ -30,11 +30,6 @@ const About: NextPage = () => {
               the wallet connection + one example transaction done for you🤌.
           </Text>
 
-          <Text>
-              I built this because every boilerplate I found is made by a company looking to push their service, so they integrate their service/product into everything and make it unusable.
-              Fuck that.
-          </Text>
-
       </Flex>
     </Flex>
   )
